@@ -1,0 +1,125 @@
+MAP
+
+	NAME GeochronWFS
+	STATUS ON
+	SIZE 440 440
+	EXTENT -8207248 -8207248 8207248 8207248
+	UNITS METERS
+	IMAGETYPE PNG24
+	TRANSPARENT ON
+	
+
+	WEB
+		IMAGEPATH "/tmp"
+		IMAGEURL "/tmp"
+		METADATA
+			"wms_title" "Geochron"
+			"wms_srs" "EPSG:4326 EPSG:3395 EPSG:3031"
+			"wms_feature_info_mime_type" "text/html"
+			"wfs_title"          "Geochron WFS Data" ## REQUIRED
+			"wfs_onlineresource" "http://www.geochron.org/cgi-bin/mapserv?map=/var/www/geochronwfs.map&" ## Recommended
+			"wfs_srs"            "EPSG:4326 EPSG:3395 EPSG:3031" ## Recommended
+			"wfs_abstract"       "Geochron Data from http://www.geochron.org" ## Recommended
+			"wfs_enable_request" "*"  # necessary
+			"wfs_keywordlist" "Geochron"
+			"wfs_fees" ""
+			"wfs_accessconstraints" ""
+			"wfs_contactorganization" "EarthChem"
+			"wfs_service_onlineresource" "http://www.earthchem.org"
+			"wfs_contactperson" "Jason Ash"
+			"wfs_contactposition" "Systems Analyst"
+			"wfs_contactvoicetelephone" ""
+			"wfs_contactfacsimiletelephone" ""
+			"wfs_address" ""
+			"wfs_city" "Lawrence"
+			"wfs_stateorprovince" "KS"
+			"wfs_postcode" "66045"
+			"wfs_country" "USA"
+			"wfs_contactelectronicmailaddress" "jasonash@ku.edu"
+			"wfs_hoursofservice" ""
+			"wfs_role" ""
+			"wfs_contactinstructions" ""
+			"gml_include_items" "all" ## Optional (serves all attributes for layer)
+			"gml_featureid"     "uuid" ## REQUIRED
+			"wfs_enable_request" "*"
+			"ows_enable_request" "*"
+		END
+	END
+
+	SYMBOL
+		NAME "circle"
+		TYPE ellipse
+		POINTS
+			1 1
+		END
+		FILLED true
+	END
+
+	PROJECTION
+		"init=epsg:4326"
+	END
+
+	LAYER
+
+		NAME "GeochronPoints"
+		GROUP "GeochronPoints"
+		TYPE POINT
+		STATUS ON
+		CONNECTIONTYPE postgis
+		CONNECTION "dbname=geochron host=ecp.iedadata.org port=5432 user=readonly password=readonly"
+		DATA "gis_geometry from (
+				select
+				uuid,
+				point::geometry as gis_geometry,
+				sample_id,
+				source
+				FROM geochronwms 
+				--limit 10000
+				) as foo using unique uuid using SRID=-1"
+		#LABELITEM "sample_id"
+		LABELCACHE ON
+		
+		METADATA
+		"wms_title" "GeochronPoints"
+		"wms_group_title" "GeochronPoints"
+		"ows_enable_request" "*"
+		"wms_include_items" "all"
+		"wfs_extent" "-180 -90 180 90" 
+
+		"wfs_title"         "GeochronPoints" ##REQUIRED
+		"wfs_srs"           "EPSG:4326" ## REQUIRED
+		"gml_include_items" "all" ## Optional (serves all attributes for layer)
+		"gml_featureid"     "uuid" ## REQUIRED
+		"wfs_enable_request" "*"
+
+		END
+		
+		TEMPLATE 'http://www.geochron.org/ged/[uuid]'
+		
+		PROJECTION
+			"init=epsg:4326"
+		END
+		CLASSITEM "source"
+		
+		CLASS
+			NAME "geochron"
+			EXPRESSION /^geochron/
+			STYLE
+				SYMBOL "circle"
+				size 9				
+				COLOR 255 0 0
+				OUTLINECOLOR 0 0 0
+			END
+			LABEL
+				COLOR 0 0 0
+				SIZE small
+				PARTIALS false
+				FORCE false
+				MINDISTANCE 200000
+				POSITION auto
+			END
+		END
+
+	END
+
+END

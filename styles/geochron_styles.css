@@ -1,0 +1,180 @@
+<style type="text/css">
+
+body {
+background-color: #ffffff;
+margin: 20pt 20pt 20pt 20pt;
+text-align: center;
+}
+
+body, td {
+font-family: verdana,arial,sans-serif;
+font-size: 8pt;
+color: #636363;
+}
+
+h1, .pagetitle {
+font-size: 10pt;
+font-weight: 600;
+color: #666666;
+margin: 0px 0px 10px 0px;
+}
+
+.pagetitle {font-size:11pt; color:#636363; margin: 0px 0px 5px 0px;}
+
+h2,h3,h4, .headline, .fatlink {
+font-size: 8pt;
+font-weight: 600;
+color: #696969;
+margin: 0 0 5px 0;
+}
+
+.page {
+position: relative;top: 0;left: 0;
+width: 705px;
+text-align: left;
+background-color: #cccccc;
+padding: 0px 0px 0px 0px;
+margin-left: auto;margin-right: auto;
+border-style: none;border-color: cyan;border-width: 1px 1px 1px 1px;
+}
+
+a:link, a:visited {
+color: #152E33;
+text-decoration: none;
+}
+
+a:hover {
+color: #152E33;
+text-decoration: underline;
+}
+
+input {
+font-size: 8pt; line-height:130%;
+margin: 0px 0px 0px 0px;
+padding: 3px 3px 3px 3px;
+}
+
+a.button,a.button:link,a.button:visited {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color : #4572b3;
+  padding: 7px 7px 7px 7px;
+  color: #999999;
+  font-family: verdana,arial,sans-serif;
+  font-size: 12px;
+  background-color:#f0f4f5;
+  text-decoration:none;
+}
+
+a.button:hover,a.button:active {color:#333333;border-color:#333333;text-decoration:none;}
+
+a.menulink { text-decoration:none;
+  /*border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+  padding: 3px 3px 3px 3px;
+  margin-top:5px; margin-bottom:5px; margin-right:5px; margin-left:0px;
+  border-color : #4572b3;
+  text-decoration: none;
+  color: #999999;
+  font-family: verdana,arial,sans-serif;*/
+  font-size: 11px;
+}
+
+a.menulink:hover,a:active { color:#990000;}
+table.aliquot, table.sample  {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: none none none none;
+	border-color: #999999; /*#636363;*/
+	border-collapse: collapse;
+	background-color: white;
+}
+
+table.aliquot th, table.sample th  {
+	font-family:arial,verdana,sans-serif;
+	font-size:10pt;
+	font-weight: 500;
+	color:#333333;
+	text-transform:uppercase;
+	text-align:left;
+	/*color: #666699; #636363; #FFFFFF;*/
+	border-color: #999999;
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: solid solid solid solid;
+	background-color: #f0f4f5; /* NYTimes tabs background blue. Tried others: #d7e6fc; 325280 #003366;*/
+}
+
+table.sample th {
+	background-color:antiquewhite;text-transform:none;
+}
+
+table.aliquot td, table.sample td  {
+	border-width: 1px 1px 1px 1px;
+	border-color: #999999;
+	padding: 2px 5px 2px 5px;
+	border-style: solid solid solid solid;
+	background-color: white;
+}
+
+.mainbox {
+	/*marginrgin-left: auto;
+	margin-right: auto;*/
+	width: 750px;
+}
+
+.box_one {  /*
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;  5px;
+	background-color: silver;  */
+}
+
+.box_two {line-height:140%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	padding: 10px; /*5px;*/
+	background-color: #fefefe; /*f0f4f5;*/
+	margin:0px 0px 0px 0px;
+}
+
+.box_five {  /*
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	background-color: pink; */
+}
+
+table.samplexxx {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: none none none none;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+table.samplexxx th {
+	color: #003366;
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-style: dashed dashed dashed dashed;
+	border-color: gray gray gray gray;
+	background-color: white;
+}
+
+table.samplexxx td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-style: dashed dashed dashed dashed;
+	border-color: gray gray gray gray;
+	background-color: white;
+}
+
+</style>

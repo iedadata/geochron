@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="results">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sample" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="igsn"/>
+							<xs:element name="name"/>
+							<xs:element name="age"/>
+							<xs:element name="uncertainty"/>
+							<xs:element name="erosionrate"/>
+							<xs:element name="elsfneutron"/>
+							<xs:element name="elsfmoun"/>
+							<xs:element name="prCas"/>
+							<xs:element name="prKs"/>
+							<xs:element name="prFes"/>
+							<xs:element name="prTis"/>
+							<xs:element name="prCam"/>
+							<xs:element name="prKm"/>
+							<xs:element name="prCll"/>
+							<xs:element name="sth"/>
+							<xs:element name="seth"/>
+							<xs:element name="ssc"/>
+							<xs:element name="qs"/>
+							<xs:element name="qth"/>
+							<xs:element name="qeth"/>
+							<xs:element name="qmu"/>
+							<xs:element name="rm"/>
+							<xs:element name="concCl"/>
+							<xs:element name="bcorr"/>
+							<xs:element name="inputData">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name"/>
+										<xs:element name="sampleRm"/>
+										<xs:element name="erEpsilon"/>
+										<xs:element name="bd"/>
+										<xs:element name="sthck"/>
+										<xs:element name="lat"/>
+										<xs:element name="long"/>
+										<xs:element name="elev"/>
+										<xs:element name="Na2O"/>
+										<xs:element name="MgO"/>
+										<xs:element name="Al2O3"/>
+										<xs:element name="SiO2"/>
+										<xs:element name="P2O5"/>
+										<xs:element name="K2O"/>
+										<xs:element name="CaO"/>
+										<xs:element name="TiO2"/>
+										<xs:element name="MnO"/>
+										<xs:element name="Fe2O3"/>
+										<xs:element name="Cl"/>
+										<xs:element name="B"/>
+										<xs:element name="Sm"/>
+										<xs:element name="Gd"/>
+										<xs:element name="U"/>
+										<xs:element name="Th"/>
+										<xs:element name="Cr"/>
+										<xs:element name="Li"/>
+										<xs:element name="shieldingF"/>
+										<xs:element name="lambdafe"/>
+										<xs:element name="TNLF"/>
+										<xs:element name="ENLF"/>
+										<xs:element name="ATM"/>
+										<xs:element name="sMassDiss"/>
+										<xs:element name="spikeMass"/>
+										<xs:element name="spikeConc"/>
+										<xs:element name="SS"/>
+										<xs:element name="SS_uncert"/>
+										<xs:element name="RS"/>
+										<xs:element name="RS_uncert"/>
+										<xs:element name="s_iRatio"/>
+										<xs:element name="bCorr"/>
+										<xs:element name="sampleRm_uncert"/>
+										<xs:element name="erEpsilon_uncert"/>
+										<xs:element name="fwc_uncert"/>
+										<xs:element name="bd_uncert"/>
+										<xs:element name="sthck_uncert"/>
+										<xs:element name="lat_uncert"/>
+										<xs:element name="long_uncert"/>
+										<xs:element name="elev_uncert"/>
+										<xs:element name="Na2O_uncert"/>
+										<xs:element name="MgO_uncert"/>
+										<xs:element name="Al2O3_uncert"/>
+										<xs:element name="SiO2_uncert"/>
+										<xs:element name="P2O5_uncert"/>
+										<xs:element name="K2O_uncert"/>
+										<xs:element name="CaO_uncert"/>
+										<xs:element name="TiO2_uncert"/>
+										<xs:element name="MnO_uncert"/>
+										<xs:element name="Fe2O3_uncert"/>
+										<xs:element name="Cl_uncert"/>
+										<xs:element name="B_uncert"/>
+										<xs:element name="Sm_uncert"/>
+										<xs:element name="Gd_uncert"/>
+										<xs:element name="U_uncert"/>
+										<xs:element name="Th_uncert"/>
+										<xs:element name="Cr_uncert"/>
+										<xs:element name="Li_uncert"/>
+										<xs:element name="shieldingF_uncert"/>
+										<xs:element name="lambdafe_uncert"/>
+										<xs:element name="TNLF_uncert"/>
+										<xs:element name="ENLF_uncert"/>
+										<xs:element name="ATM_uncert"/>
+										<xs:element name="sMassDiss_uncert"/>
+										<xs:element name="spikeMass_uncert"/>
+										<xs:element name="spikeConc_uncert"/>
+										<xs:element name="s_iRatio_uncert"/>
+										<xs:element name="bCorr_uncert"/>
+										<xs:element name="targetK2O_uncert"/>
+										<xs:element name="targetCaO_uncert"/>
+										<xs:element name="targetTiO2_uncert"/>
+										<xs:element name="targetFe2O3_uncert"/>
+										<xs:element name="targetCl_uncert"/>
+										<xs:element name="totalWater"/>
+										<xs:element name="totalCO2"/>
+										<xs:element name="CO2_uncert"/>
+										<xs:element name="targetK2O"/>
+										<xs:element name="targetCaO"/>
+										<xs:element name="targetTiO2"/>
+										<xs:element name="targetFe2O3"/>
+										<xs:element name="targetCl"/>
+									</xs:sequence>
+									<xs:attribute name="sNo" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

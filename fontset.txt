@@ -1,0 +1,3 @@
+alte /local/public/mgg/web/www.geochron.org/htdocs/alte.ttf
+arial /local/public/mgg/web/www.geochron.org/htdocs/arial.ttf
+impact /local/public/mgg/web/www.geochron.org/htdocs/impact.ttf

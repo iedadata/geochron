@@ -1,0 +1,22 @@
+<?
+//config.inc.php
+//this file contains sensitive credentials and connection information
+
+$dbusername="db name here";
+$dbpassword="db password here";
+$dbdatabase="database name here";
+$dbserver="db server here";
+
+$emailusername = "gmail address here";
+$emailpassword = "gmail password here";
+
+$googleouathclientId = "google oauth client id here";
+$googleouathclientSecret = "google oauth client secret here";
+
+$orcidclientid = "orcid client id here";
+$orcidclientsecret = "orcid client secret here";
+
+$githubclientid = "github client id here";
+$githubclientsecret = "github client secret here";
+
+?>

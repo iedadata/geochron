@@ -1,0 +1,35 @@
+
+<div style="width:600px">
+This page allows the geochron image service to be tested manually.<br><br>
+The POST URL for this service is http://www.geochronportal.org/imageservice.php<br><br>
+
+The variables are username, password, and uploadfile (file to upload).<br><br>
+<b><font color="red">The encapsulation type for the form must be multipart/form-data</font><b><br><br>
+
+<form action="imageservice.php" method="post" enctype="multipart/form-data">
+<table>
+<tr><td>POST var: username</td><td><input type="text" name="username"></td></tr>
+<tr><td>POST var: password:</td><td><input type="text" name="password"></td></tr>
+<tr>
+	<td>POST var: imagetype</td>
+	<td>
+		<select name="imagetype">
+			<option value="concordia">concordia
+			<option value="weighted_mean">weighted_mean
+			<option value="probability_density">probability_density
+			<option value="histogram">histogram
+			<option value="photo">photo
+			<option value="report">report
+			<option value="report_csv">report_csv
+	</td>
+</tr>
+<tr><td>POST var: uploadfile:</td><td><input name="uploadfile" type="file"></td></tr>
+<tr><td colspan="2"><input type="submit" name="submit" value="Submit"></td></tr>
+</table>
+</form>
+
+
+
+
+
+

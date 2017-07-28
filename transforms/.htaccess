@@ -1,0 +1,9 @@
+RewriteEngine on
+
+Header set Access-Control-Allow-Origin "*"
+
+RewriteRule ^zips_(.*).xslt$ zipsxslt.php?pkey=$1 [L]
+RewriteRule ^ararxslt_(.*).xslt$ araruploadxslt.php?pkey=$1 [L]
+RewriteRule ^uthhexls_(.*).xslt$ uthhexlsxslt.php?pkey=$1 [L]
+RewriteRule ^squid_(.*).xslt$ squidxslt.php?pkey=$1 [L]
+RewriteRule ^squid2_(.*).xslt$ squid2xslt.php?pkey=$1 [L]

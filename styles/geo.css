@@ -1,0 +1,78 @@
+<style type="text/css">
+body {
+background-color: #ffffff;
+margin: 20pt 20pt 20pt 20pt;
+text-align: center;
+}
+body, td {
+font-family: verdana,arial,sans-serif;
+font-size: 8pt;
+color: #636363;
+}
+
+table.sample  {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: none none none none;
+	border-color: #999999; /*#636363;*/
+	border-collapse: collapse;
+	background-color: white;
+}
+table.sample th  {
+	font-family:arial,verdana,sans-serif;
+	font-size:10pt;
+	font-weight: 500;
+	color:#333333;
+	text-transform:uppercase;
+	text-align:left;
+	/*color: #666699; #636363; #FFFFFF;*/
+	border-color: #999999;
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: solid solid solid solid;
+	background-color: #f0f4f5; /* NYTimes tabs background blue. Tried others: #d7e6fc; 325280 #003366;*/
+}
+table.sample th {
+	background-color:antiquewhite;text-transform:none;
+	}
+table.sample td  {
+	border-width: 1px 1px 1px 1px;
+	border-color: #999999;
+	padding: 2px 5px 2px 5px;
+	border-style: solid solid solid solid;
+	background-color: white;
+}
+/* styles used by viewfile.cfm - adapted from ones in jason's upbgeochron.css file - some redefined above */
+.headline, .fatlink {
+font-size: 8pt;
+font-weight: 600;
+color: #696969;
+margin: 0 0 5px 0;
+}
+.pagetitle {
+	color: #003366;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.mainbox {
+	/*marginrgin-left: auto;
+	margin-right: auto;*/
+	width: 750px;
+}
+.box_one {  /*
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;  5px;
+	background-color: silver;  */
+}
+.box_two {line-height:140%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	padding: 10px; /*5px;*/
+	background-color: #fefefe; /*f0f4f5;*/
+	margin:0px 0px 0px 0px;
+}
+
+</style>

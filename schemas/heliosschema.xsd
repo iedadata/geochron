@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Jason Ash (University of Kansas) -->
+<xs:schema xmlns="http://www.geosamples.org" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.geosamples.org" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1.0">
+	<xs:element name="HeliosModel">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SampleForGeochron">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SampleName"/>
+							<xs:element name="SampleComment"/>
+							<xs:element name="IGSN"/>
+							<xs:element name="AnalystName"/>
+							<xs:element name="LaboratoryName"/>
+							<xs:element name="Publication" minOccurs="0"/>
+							<xs:element name="DOI" minOccurs="0"/>
+							<xs:element name="AwardNumber" minOccurs="0"/>
+							<xs:element name="Stratigraphy" minOccurs="0"/>
+							<xs:element name="StratigraphicAge" minOccurs="0"/>
+							<xs:element name="La238"/>
+							<xs:element name="La235"/>
+							<xs:element name="La232"/>
+							<xs:element name="La147"/>
+							<xs:element name="MeanESR"/>
+							<xs:element name="Ages">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Age" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="SampleAge"/>
+													<xs:element name="SampleAgeErr"/>
+													<xs:element name="SampleAgeStDev"/>
+													<xs:element name="n"/>
+													<xs:element name="TypeOfAge"/>
+													<xs:element name="CalculationMethod" minOccurs="0"/>
+													<xs:element name="AgeUnits"/>
+													<xs:element name="UncertaintyType"/>
+													<xs:element name="OneSigma"/>
+													<xs:element name="PreferredAge"/>
+													<xs:element name="AgeComment" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Aliquots">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="AliquotForGeochron" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="AliquotID"/>
+													<xs:element name="SampleName"/>
+													<xs:element name="alNo"/>
+													<xs:element name="Mineral"/>
+													<xs:element name="Mass"/>
+													<xs:element name="MassUnits" minOccurs="0"/>
+													<xs:element name="UFt" minOccurs="0"/>
+													<xs:element name="ThFt" minOccurs="0"/>
+													<xs:element name="He" minOccurs="0"/>
+													<xs:element name="HeErr" minOccurs="0"/>
+													<xs:element name="U238_235Meas" minOccurs="0"/>
+													<xs:element name="Th232_230Meas" minOccurs="0"/>
+													<xs:element name="Sm147_149Meas" minOccurs="0"/>
+													<xs:element name="UMeasErr" minOccurs="0"/>
+													<xs:element name="ThMeasErr" minOccurs="0"/>
+													<xs:element name="SmMeasErr" minOccurs="0"/>
+													<xs:element name="MeanL" minOccurs="0"/>
+													<xs:element name="MeanW" minOccurs="0"/>
+													<xs:element name="ESR" minOccurs="0"/>
+													<xs:element name="SpikeID" minOccurs="0"/>
+													<xs:element name="SpikeVol" minOccurs="0"/>
+													<xs:element name="SpkConcUnits" minOccurs="0"/>
+													<xs:element name="Spk238_235" minOccurs="0"/>
+													<xs:element name="Spk232_230" minOccurs="0"/>
+													<xs:element name="Spk147_149" minOccurs="0"/>
+													<xs:element name="Spk235AtomsPerMl" minOccurs="0"/>
+													<xs:element name="Spk230AtomsPerMl" minOccurs="0"/>
+													<xs:element name="Spk149AtomsPerMl" minOccurs="0"/>
+													<xs:element name="NormalID" minOccurs="0"/>
+													<xs:element name="NormalVol" minOccurs="0"/>
+													<xs:element name="NorConcUnits" minOccurs="0"/>
+													<xs:element name="Nor238_235meas" minOccurs="0"/>
+													<xs:element name="Nor232_230meas" minOccurs="0"/>
+													<xs:element name="Nor147_149meas" minOccurs="0"/>
+													<xs:element name="NorUConc" minOccurs="0"/>
+													<xs:element name="NorThConc" minOccurs="0"/>
+													<xs:element name="NorSmConc" minOccurs="0"/>
+													<xs:element name="SpNorVolumeUnits" minOccurs="0"/>
+													<xs:element name="Age"/>
+													<xs:element name="AbsAgeErr"/>
+													<xs:element name="PAgeErr"/>
+													<xs:element name="Ft"/>
+													<xs:element name="ThURatio"/>
+													<xs:element name="Uppm"/>
+													<xs:element name="Thppm"/>
+													<xs:element name="Sm147ppm"/>
+													<xs:element name="HeNmolG"/>
+													<xs:element name="UeffConc"/>
+													<xs:element name="UsedForAgeCalc"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

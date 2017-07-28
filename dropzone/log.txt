@@ -1,0 +1,876 @@
+FILE Data
+
+Array
+(
+)
+
+
+*************************************
+
+POST Data:
+
+*************************************
+
+FILE Data
+
+Array
+(
+)
+
+
+*************************************
+
+POST Data:
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpbeXFHm
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpwqpS7P
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpkagYfB
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => IMG_20160330_153117.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/php2mqO6K
+            [error] => 0
+            [size] => 296100
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpjcJrqh
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpmEQQak
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpT3odiB
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/php4P4ulY
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpRjfO7X
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/php8XAvxf
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phptuXarg
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpAwx0dw
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpRwms4o
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => IMG_20160330_153117.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpDFzpxL
+            [error] => 0
+            [size] => 296100
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => GSD_hero.tiff
+            [type] => image/x-tiff
+            [tmp_name] => /tmp/phpfnJKHo
+            [error] => 0
+            [size] => 936542
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => GSD_hero.tiff
+            [type] => image/x-tiff
+            [tmp_name] => /tmp/php9IE9wD
+            [error] => 0
+            [size] => 936542
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => C360_2016-04-20-17-53-15-470.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/php35NCVq
+            [error] => 0
+            [size] => 1150910
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpFM1Y1m
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => wwZs34z.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpwYgSrj
+            [error] => 0
+            [size] => 403614
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => CdmH6e_W4AA-fBT.jpg_large.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpJLwHPu
+            [error] => 0
+            [size] => 81393
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => GSD_hero.tiff
+            [type] => image/x-tiff
+            [tmp_name] => /tmp/phpiQX8dA
+            [error] => 0
+            [size] => 936542
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => horse_shirt.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpamLxUX
+            [error] => 0
+            [size] => 60636
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => C360_2016-04-20-17-53-15-470.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpxqduSu
+            [error] => 0
+            [size] => 1150910
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => Oona.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpKo5sZc
+            [error] => 0
+            [size] => 3627130
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => wwZs34z.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpG9yTed
+            [error] => 0
+            [size] => 403614
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => Oona.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpmkpK0q
+            [error] => 0
+            [size] => 3627130
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+    [file] => Array
+        (
+            [name] => CdmH6e_W4AA-fBT.jpg_large.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpwerD20
+            [error] => 0
+            [size] => 81393
+        )
+
+)
+
+
+*************************************
+
+POST Data:
+
+foo ---- bar
+
+*************************************
+
+FILE Data
+
+Array
+(
+)
+
+
+*************************************
+
+POST Data:
+
+*************************************
+
+POST:
+sample_pkey ---- 12345
+
+file:
+name ---- C360_2016-04-20-17-53-15-470.jpg
+
+type ---- image/jpeg
+
+tmp_name ---- /tmp/phpwAx9MF
+
+error ---- 0
+
+size ---- 1150910
+
+ext ---- jpg
+
+tempname ---- /tmp/phpwAx9MF
+
+POST:
+sample_pkey ---- 12345
+
+file:
+name ---- GSD_hero.tiff
+
+type ---- image/x-tiff
+
+tmp_name ---- /tmp/phpcNy2Vt
+
+error ---- 0
+
+size ---- 936542
+
+ext ---- tiff
+
+tempname ---- /tmp/phpcNy2Vt
+
+POST:
+sample_pkey ---- 12345
+
+file:
+name ---- GSD_hero.tiff
+
+type ---- image/x-tiff
+
+tmp_name ---- /tmp/phpoO1A6x
+
+error ---- 0
+
+size ---- 936542
+
+ext ---- tiff
+
+tempname ---- /tmp/phpoO1A6x
+
+POST:
+sample_pkey ---- 12345
+
+file:
+name ---- CdmH6e_W4AA-fBT.jpg_large.jpeg
+
+type ---- image/jpeg
+
+tmp_name ---- /tmp/php5PkIVk
+
+error ---- 0
+
+size ---- 81393
+
+ext ---- jpeg
+
+tempname ---- /tmp/php5PkIVk
+
+POST:
+sample_pkey ---- 12345
+
+file:
+POST:
+sample_pkey ---- 12345
+
+file:
+POST:
+sample_pkey ---- 12345
+
+POST:
+sample_pkey ---- 12345
+
+POST:
+sample_pkey ---- 10068
+
+POST:
+sample_pkey ---- 10068
+
+POST:
+sample_pkey ---- 10070
+
+POST:
+sample_pkey ---- 10070
+
+POST:
+sample_pkey ---- 10071
+
+POST:
+sample_pkey ---- 10071
+
+POST:
+sample_pkey ---- 10071
+
+POST:
+sample_pkey ---- 10072
+
+POST:
+sample_pkey ---- 10072
+
+POST:
+sample_pkey ---- 10072
+
+POST:
+sample_pkey ---- 10072
+
+POST:
+sample_pkey ---- 10072
+
+POST:
+sample_pkey ---- 10074
+
+POST:
+sample_pkey ---- 10074
+
+POST:
+sample_pkey ---- 10074
+
+POST:
+sample_pkey ---- 10075
+
+POST:
+sample_pkey ---- 10075
+
+POST:
+sample_pkey ---- 10076
+
+POST:
+sample_pkey ---- 10076
+
+POST:
+sample_pkey ---- 10078
+
+POST:
+sample_pkey ---- 10078
+
+POST:
+sample_pkey ---- 10078
+
+POST:
+sample_pkey ---- 10079
+
+POST:
+sample_pkey ---- 10079
+
+POST:
+sample_pkey ---- 10079
+
+POST:
+sample_pkey ---- 10080
+
+POST:
+sample_pkey ---- 10080
+
+POST:
+sample_pkey ---- 10081
+
+POST:
+sample_pkey ---- 10082
+
+POST:
+sample_pkey ---- 10082
+
+POST:
+sample_pkey ---- 10111
+
+POST:
+sample_pkey ---- 10111
+
+POST:
+sample_pkey ---- 10112
+
+POST:
+sample_pkey ---- 10112
+
+POST:
+sample_pkey ---- 10113
+

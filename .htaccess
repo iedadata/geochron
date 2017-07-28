@@ -1,0 +1,68 @@
+Header set Access-Control-Allow-Origin "*"
+
+RewriteEngine on
+
+Header set Access-Control-Allow-Origin "*"
+
+RewriteRule ^excelfiles/(.*)$ downloadexcel.php?key=$1 [L]
+
+RewriteRule ^xmldata/(.*)$ getxml.php?igsn=$1 [L]
+RewriteRule ^numxmldata/(.*)$ getxml.php?pkey=$1 [L]
+
+RewriteRule ^validategroup/(.*)$ validategrp.php?id=$1 [L]
+
+RewriteRule ^validatedataset/(.*)$ validatedset.php?id=$1 [L]
+
+RewriteRule ^data/(.*)$ getdata.php?igsn=$1 [L]
+
+RewriteRule ^numdata/(.*)$ getdata.php?pkey=$1 [L]
+
+RewriteRule ^dataset/(.*)/(.*)$ showdataset.php?type=$1&id=$2 [L]
+
+RewriteRule ^ecxml/(.*)$ earthchemxml.php?pkey=$1 [L]
+
+RewriteRule ^datasetb/(.*)/(.*)$ showdatasetb.php?type=$1&id=$2 [L]
+
+RewriteRule ^restitems/(.*)/(.*)/(.*)$ listrestitems.php?item=$1&type=$2&jsonpfunction=$3 [L]
+
+RewriteRule ^restitems/(.*)/(.*)$ listrestitems.php?item=$1&type=$2 [L]
+
+RewriteRule ^searchxls/(.*)$ showdataset.php?pkey=$1&fromsearch=yes [L]
+
+RewriteRule ^searchxlsb/(.*)$ showdatasetb.php?pkey=$1&fromsearch=yes [L]
+
+RewriteRule fetchschema.xsd fetchschema.php
+
+RewriteRule ^c/(.*)$ concordias/fullsize/$1.jpg [L]
+
+
+RewriteRule ^datasetmap/(.*)$ datasetinteractivemap?id=$1 [L]
+
+
+
+
+RewriteRule ^pd/(.*)$ probabilities/fullsize/$1.jpg [L]
+
+RewriteRule ^csv/(.*)$ csvs/$1.csv [L]
+
+RewriteRule ^m/(.*)$ viewid.php?pkey=$1 [L]
+
+RewriteRule ^zips_(.*).xslt$ zipsxslt.php?pkey=$1 [L]
+
+RewriteRule ^ararxslt_(.*).xslt$ araruploadxslt.php?pkey=$1 [L]
+
+RewriteRule ^uthhexls_(.*).xslt$ uthhexlsxslt.php?pkey=$1 [L]
+
+RewriteRule ^squid_(.*).xslt$ squidxslt.php?pkey=$1 [L]
+RewriteRule ^squid2_(.*).xslt$ squid2xslt.php?pkey=$1 [L]
+
+RewriteRule ^ged/(.*)$ wmsmapquery.php?fromwms=yes&sample_pkey=$1 [L]
+
+
+
+RewriteRule ^markaspub/(.*).js$ jsmarkpublished.php?file=$1 [L]
+
+#RewriteRule ^wfsmap(.*) /cgi-bin/mapserv?map=/public/mgg/web/www.geochron.org/geochronwfs.map&$1
+
+#RewriteRule wfsmap(.*)? /foo.php?map=/public/mgg/web/www.geochron.org/geochronwfs.map&foo=$1
+

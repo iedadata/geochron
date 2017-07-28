@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.earth-time.org"
+           xmlns="http://www.earth-time.org"
+           elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      This schema defines the contents of an Aliquot
+      for the EARTHTIME / EarthChem project.  The XML files published
+      against this schema are produced by U-Pb_Redux.
+
+      Copyright 2006-2008 James F. Bowring and EARTHTIME.
+
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+      You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+
+      Author: James F. Bowring[smtp:bowring@gmail.com]
+
+      Created: 1.August.2007
+      Revised: 1.January.2008
+      
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:include schemaLocation="http://earth-time.org/projects/upb/public_data/XSD/TracerXMLSchema.xsd"/>
+  <xs:include schemaLocation="http://earth-time.org/projects/upb/public_data/XSD/MineralStandardModelXMLSchema.xsd"/>
+  <xs:include schemaLocation="http://earth-time.org/projects/upb/public_data/XSD/PbBlankXMLSchema.xsd"/>
+  <xs:include schemaLocation="http://earth-time.org/projects/upb/public_data/XSD/AnalysisFractionXMLSchema.xsd"/>
+  <xs:include schemaLocation="http://earth-time.org/projects/upb/public_data/XSD/PhysicalConstantsXMLSchema.xsd"/>
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      An Aliquot is an experiment using one or several fractions (analysis).
+      Both sampleIGSN and aliquotIGSN refer to the SESAR database (not functional as of Feb 2008)
+      The aliquotName, laboratoryName, analystName, aliquotComment, and aliquotReference
+      are all supplied by the analyst using U-Pb_Redux.
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name="Aliquot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sampleIGSN" type="xs:string"/>
+        <xs:element name="aliquotIGSN" type="xs:string"/>
+        <xs:element name="aliquotName" type="xs:string"/>
+        <xs:element name="laboratoryName" type="xs:string"/>
+        <xs:element name="analystName" type="xs:string"/>
+        <xs:element name="aliquotComment" type="xs:string"/>
+        <xs:element name="aliquotReference" type="xs:string"/>
+        
+        <xs:element name="aliquotInstrumentalMethod" type="AliquotInstrumentalMethodName"/>
+        <xs:element name="aliquotInstrumentalMethodReference" type="xs:string"/>
+
+        <xs:element name="calibrationError206-238" type="xs:decimal"/>
+        <xs:element name="calibrationError208-232" type="xs:decimal"/>
+        <xs:element name="calibrationError207-206" type="xs:decimal"/>
+
+  
+  <xs:element name="mineralStandardModels">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MineralStandardModel" type="MineralStandardModel" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="sampleAgeModels">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SampleAgeModel" type="SampleAgeModel" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="pbBlanks">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="PbBlank" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="tracers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Tracer" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="alphaPbModel" type="ValueModel"/>
+        
+        <xs:element name="alphaUModel" type="ValueModel"/>
+        
+        <xs:element name="analysisFractions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="AnalysisFraction" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="physicalConstantsModel" type="PhysicalConstants" minOccurs="1"  maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+
+  <xs:simpleType name="AliquotInstrumentalMethodName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ID-TIMS"/>
+      <xs:enumeration value="SHRIMP Ion Probe"/>
+      <xs:enumeration value="Cameca Ion Probe"/>
+      <xs:enumeration value="Quad ICPMS"/>
+      <xs:enumeration value="HR-ICPMS"/>
+      <xs:enumeration value="MC-ICPMS"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

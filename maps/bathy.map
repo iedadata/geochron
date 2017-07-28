@@ -1,0 +1,171 @@
+MAP
+  NAME MAP_POINTS
+  SIZE 600 300
+  EXTENT -180 -90 180 90
+  IMAGETYPE jpeg
+  TRANSPARENT ON
+
+  SYMBOL
+    NAME 'triangleup'
+    TYPE vector
+    FILLED true
+    POINTS
+      0 4
+      2 0
+      4 4
+      0 4
+    END
+  END
+
+  SYMBOL
+    NAME 'triangledown'
+    TYPE vector
+    FILLED true
+    POINTS
+      0 0
+      2 4
+      4 0
+      0 0
+    END
+  END
+
+  SYMBOL
+    NAME 'diamond'
+    TYPE vector
+    FILLED true
+    POINTS
+      2 0
+      0 2
+      2 4
+      4 2
+      2 0
+    END
+  END
+
+  SYMBOL
+    NAME 'square'
+    TYPE vector
+    FILLED true
+    POINTS
+      0 0
+      0 4
+      4 4
+      4 0
+      0 0
+    END
+  END
+
+  SYMBOL
+    NAME 'circlefilled'
+    TYPE ellipse
+    FILLED true
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME 'circleoutline'
+    TYPE ellipse
+    FILLED false
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME 'cross'
+    TYPE vector
+    POINTS
+      2 0
+      2 4
+      -99 -99
+      0 2
+      4 2
+    END
+  END
+
+  SYMBOL
+    NAME 'star'
+    TYPE vector
+    POINTS
+      0 0
+      4 4
+      -99 -99
+      2 0
+      2 4
+      -99 -99
+      4 0
+      0 4
+    END
+  END
+
+  SYMBOL
+    NAME 'x'
+    TYPE vector
+    POINTS
+      0 0
+      4 4
+      -99 -99
+      4 0
+      0 4
+    END
+  END
+
+  SYMBOL
+    NAME 'mygif'
+    TYPE pixmap
+    IMAGE 'doug2.gif' 
+  END
+
+LAYER
+    NAME bathymetry
+    TYPE RASTER
+    STATUS DEFAULT
+    DATA "/var/www/custompoints/bathy.tif"
+  END
+
+  LAYER # begin antialiased country boundary (line) layer
+    NAME 'country_line'
+    DATA 'world_borders'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'Country Boundary'
+      STYLE
+        COLOR 96 96 96
+        WIDTH 2
+        ANTIALIAS TRUE
+      END
+    END
+  END # end country boundary layer
+  
+  
+  LAYER # state layer
+    NAME 'state_line'
+    DATA 'fe_2007_us_state00'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'State Boundary'
+      STYLE
+        COLOR 80 80 80
+        WIDTH 1
+        ANTIALIAS TRUE
+      END
+    END
+  END # end state boundary layer
+
+END

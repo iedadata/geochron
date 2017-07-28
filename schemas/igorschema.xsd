@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="sampledata">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="confidentiality"/>
+				<xs:element name="rocktype"/>
+				<xs:element name="igsn"/>
+				<xs:element name="sample"/>
+				<xs:element name="calculatedlocation"/>
+				<xs:element name="owner"/>
+				<xs:element name="location"/>
+				<xs:element name="latdec"/>
+				<xs:element name="description"/>
+				<xs:element name="projectname"/>
+				<xs:element name="notes"/>
+				<xs:element name="analust"/>
+				<xs:element name="lngdec"/>
+				<xs:element name="sequencedata">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fileid"/>
+							<xs:element name="graindata" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="FinalDiscPercent"/>
+										<xs:element name="grain"/>
+										<xs:element name="sequence"/>
+										<xs:element name="d"/>
+										<xs:element name="Final207_204"/>
+										<xs:element name="Approx_U_PPM"/>
+										<xs:element name="graintestid"/>
+										<xs:element name="row"/>
+										<xs:element name="Dose"/>
+										<xs:element name="Final208_232_Int2SE"/>
+										<xs:element name="FinalAgePbC208_232"/>
+										<xs:element name="Final238_206_Prop2SE"/>
+										<xs:element name="Sourcefile"/>
+										<xs:element name="fileid"/>
+										<xs:element name="FinalAge206_238_Prop2SE"/>
+										<xs:element name="FInal_U_Th_Ratio"/>
+										<xs:element name="Final238_206"/>
+										<xs:element name="FinalAgePbC207_235_Int2SE"/>
+										<xs:element name="Final207_235"/>
+										<xs:element name="Final207_206"/>
+										<xs:element name="FinalAgePbC207_206"/>
+										<xs:element name="ErrorCorrelation_38_6vs7_6"/>
+										<xs:element name="fullsamplename"/>
+										<xs:element name="Dose_Int2SE"/>
+										<xs:element name="Final206_208"/>
+										<xs:element name="FinalPbC207_206_Int2SE"/>
+										<xs:element name="ErrorCorrelation_6_38vs7_35"/>
+										<xs:element name="FinalPbC207_206"/>
+										<xs:element name="Final206_204"/>
+										<xs:element name="Final207_206_Int2SE"/>
+										<xs:element name="realgrain"/>
+										<xs:element name="FinalPbC207_235"/>
+										<xs:element name="Final206_238_Int2SE"/>
+										<xs:element name="FinalPbC206_238"/>
+										<xs:element name="FinalAge208_232_Int2SE"/>
+										<xs:element name="FinalAge207_235_Int2SE"/>
+										<xs:element name="FinalAgePbC206_238"/>
+										<xs:element name="FinalAge207_206"/>
+										<xs:element name="FinalPbC238_206"/>
+										<xs:element name="ExtraMetaData"/>
+										<xs:element name="FinalDiscPercent_Int2SE"/>
+										<xs:element name="Components"/>
+										<xs:element name="FinalAge208_232"/>
+										<xs:element name="Final206_208_Int2SE"/>
+										<xs:element name="FinalPbC208_232"/>
+										<xs:element name="FinalAge208_232_Prop2SE"/>
+										<xs:element name="FinalPbC206_238_Int2SE"/>
+										<xs:element name="Final206_238"/>
+										<xs:element name="comments"/>
+										<xs:element name="Final207_204_Int2SE"/>
+										<xs:element name="Final208_232"/>
+										<xs:element name="FinalAge207_235_Prop2SE"/>
+										<xs:element name="Approx_Pb_PPM"/>
+										<xs:element name="sample"/>
+										<xs:element name="FinalPbC207_235_Int2SE"/>
+										<xs:element name="t"/>
+										<xs:element name="Approx_U_PPM_Int2SE"/>
+										<xs:element name="FinalAge206_238"/>
+										<xs:element name="FinalAge207_235"/>
+										<xs:element name="FinalAgePbC207_235"/>
+										<xs:element name="duration"/>
+										<xs:element name="Final208_204_Int2SE"/>
+										<xs:element name="Final207_235_Prop2SE"/>
+										<xs:element name="FinalPbC238_206_Int2SE"/>
+										<xs:element name="Approx_Th_PPM_Int2SE"/>
+										<xs:element name="FinalAgePbC206_238_Int2SE"/>
+										<xs:element name="Final207_206_Prop2SE"/>
+										<xs:element name="Final206_238_Prop2SE"/>
+										<xs:element name="dt_subsecond"/>
+										<xs:element name="FinalAge206_238_Int2SE"/>
+										<xs:element name="dt"/>
+										<xs:element name="FinalPbC207_206_Prop2SE"/>
+										<xs:element name="FinalAge207_206_Int2SE"/>
+										<xs:element name="Final208_232_Prop2SE"/>
+										<xs:element name="Final208_204"/>
+										<xs:element name="FinalAgePbC207_206_Int2SE"/>
+										<xs:element name="Selection"/>
+										<xs:element name="Final207_235_Int2SE"/>
+										<xs:element name="ErrorCorrelAnd_6_38vs7_35"/>
+										<xs:element name="Final238_206_Int2SE"/>
+										<xs:element name="FinalAge207_206_Prop2SE"/>
+										<xs:element name="Approx_Th_PPM"/>
+										<xs:element name="FInal_U_Th_Ratio_Int2SE"/>
+										<xs:element name="totalpoints"/>
+										<xs:element name="Final206_204_Int2SE"/>
+										<xs:element name="Approx_Pb_PPM_Int2SE"/>
+										<xs:element name="FinalAgePbC208_232_Int2SE"/>
+										<xs:element name="FinalPbC208_232_Int2SE"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

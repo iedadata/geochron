@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Jason Ash (University of Kansas) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.earth-time.org" targetNamespace="http://www.earth-time.org" elementFormDefault="qualified">
+	<xs:element name="Aliquot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sampleIGSN"/>
+				<xs:element name="aliquotIGSN"/>
+				<xs:element name="aliquotName"/>
+				<xs:element name="laboratoryName"/>
+				<xs:element name="analystName"/>
+				<xs:element name="aliquotComment"/>
+				<xs:element name="aliquotReference"/>
+				<xs:element name="aliquotInstrumentalMethod"/>
+				<xs:element name="aliquotInstrumentalMethodReference"/>
+        		<xs:element name="calibrationUnct206-238"/>
+        		<xs:element name="calibrationUnct208-232"/>
+        		<xs:element name="calibrationUnct207-206"/>
+				<xs:element name="mineralStandardModels">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MineralStandardModel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name"/>
+										<xs:element name="mineralStandardName"/>
+										<xs:element name="standardMineralName"/>
+										<xs:element name="trueAge"/>
+										<xs:element name="measuredAge"/>
+										<xs:element name="comment"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="sampleDateModels">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SampleDateModel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+									  <xs:element name="name" />
+									  <xs:element name="value" />
+									  <xs:element name="uncertaintyType" type="uncertaintyTypes" />
+									  <xs:element name="oneSigma" />          
+									  <xs:element name="meanSquaredWeightedDeviation" />
+									  <xs:element name="internalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="internalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="internalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="includedFractionsVector">
+										<xs:complexType>
+										  <xs:sequence maxOccurs="unbounded">
+											<xs:element name="fractionID" type="xs:string" />
+										  </xs:sequence>
+										</xs:complexType>
+									  </xs:element>
+									  <xs:element name="explanation" type="xs:string" />
+									  <xs:element name="comment" type="xs:string" />
+									  <xs:element name="preferred" type="xs:boolean" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SampleDateInterceptModel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+									  <xs:element name="name" />
+									  <xs:element name="value" />
+									  <xs:element name="uncertaintyType" type="uncertaintyTypes" />
+									  <xs:element name="oneSigma" />          
+									  <xs:element name="meanSquaredWeightedDeviation" />
+									  <xs:element name="internalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnct" minOccurs="0"/>
+									  <xs:element name="internalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnctWithTracerCalibrationUnct" minOccurs="0"/>
+									  <xs:element name="internalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="plusInternalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="minusInternalTwoSigmaUnctWithTracerCalibrationAndDecayConstantUnct" minOccurs="0"/>
+									  <xs:element name="includedFractionsVector">
+										<xs:complexType>
+										  <xs:sequence maxOccurs="unbounded">
+											<xs:element name="fractionID" type="xs:string" />
+										  </xs:sequence>
+										</xs:complexType>
+									  </xs:element>
+									  <xs:element name="explanation" type="xs:string" />
+									  <xs:element name="comment" type="xs:string" />
+									  <xs:element name="preferred" type="xs:boolean" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pbBlanks">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PbBlank" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name"/>
+										<xs:element name="ratios">
+											<xs:complexType>
+												<xs:sequence minOccurs="3" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="rhoCorrelations">
+											<xs:complexType>
+												<xs:sequence minOccurs="3" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tracers">
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="Tracer">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="tracerName"/>
+										<xs:element name="versionNumber"/>
+										<xs:element name="tracerType"/>
+										<xs:element name="labName"/>
+										<xs:element name="dateCertified"/>
+										<xs:element name="ratios">
+											<xs:complexType>
+												<xs:sequence minOccurs="9" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="isotopeConcentrations">
+											<xs:complexType>
+												<xs:sequence minOccurs="2" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="alphaPbModels">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ValueModel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name"/>
+										<xs:element name="value"/>
+										<xs:element name="uncertaintyType"/>
+										<xs:element name="oneSigma"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="alphaUModels">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ValueModel" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name"/>
+										<xs:element name="value"/>
+										<xs:element name="uncertaintyType"/>
+										<xs:element name="oneSigma"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="analysisFractions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AnalysisFraction" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="sampleName"/>
+										<xs:element name="fractionID"/>
+										<xs:element name="grainID" type="xs:string" minOccurs="0"/>
+										<xs:element name="zircon"/>
+										<xs:element name="imageURL"/>
+										<xs:element name="timeStamp"/>
+										<xs:element name="mineralName"/>
+										<xs:element name="settingType"/>
+										<xs:element name="numberOfGrains"/>
+										<xs:element name="estimatedDate"/>
+										<xs:element name="physicallyAbraded"/>
+										<xs:element name="leachedInHFAcid"/>
+										<xs:element name="annealedAndChemicallyAbraded"/>
+										<xs:element name="chemicallyPurifiedUPb"/>
+										<xs:element name="analysisFractionComment"/>
+										<xs:element name="pbBlankID"/>
+										<xs:element name="tracerID"/>
+										<xs:element name="alphaPbModelID"/>
+										<xs:element name="alphaUModelID"/>
+										<xs:element name="initialPbModel" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name"/>
+													<xs:element name="reference"/>
+													<xs:element name="calculated"/>
+													<xs:element name="ratios">
+														<xs:complexType>
+															<xs:sequence minOccurs="3" maxOccurs="unbounded">
+																<xs:element name="ValueModel">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="name"/>
+																			<xs:element name="value"/>
+																			<xs:element name="uncertaintyType"/>
+																			<xs:element name="oneSigma"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="correlationCoefficients">
+														<xs:complexType>
+															<xs:sequence minOccurs="3" maxOccurs="unbounded">
+																<xs:element name="ValueModel">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="name"/>
+																			<xs:element name="value"/>
+																			<xs:element name="uncertaintyType"/>
+																			<xs:element name="oneSigma"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="pbCollectorType"/>
+										<xs:element name="uCollectorType"/>
+										<xs:element name="analysisMeasures">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ValueModel" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="measuredRatios">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="MeasuredRatioModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+																<xs:element name="fracCorr"/>
+																<xs:element name="oxideCorr"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="radiogenicIsotopeRatios">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="radiogenicIsotopeDates">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="compositionalMeasures">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="sampleIsochronRatios">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="ValueModel">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="name"/>
+																<xs:element name="value"/>
+																<xs:element name="uncertaintyType"/>
+																<xs:element name="oneSigma"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="physicalConstantsModel">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name"/>
+							<xs:element name="version"/>
+							<xs:element name="atomicMolarMasses">
+								<xs:complexType>
+									<xs:sequence minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="ValueModel">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name"/>
+													<xs:element name="value"/>
+													<xs:element name="uncertaintyType"/>
+													<xs:element name="oneSigma"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="measuredConstants">
+								<xs:complexType>
+									<xs:sequence minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="ValueModelReferenced">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name"/>
+													<xs:element name="value"/>
+													<xs:element name="uncertaintyType"/>
+													<xs:element name="oneSigma"/>
+													<xs:element name="reference"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="physicalConstantsComment"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="uncertaintyTypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NONE" />
+			<xs:enumeration value="ABS" />
+			<xs:enumeration value="PCT" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

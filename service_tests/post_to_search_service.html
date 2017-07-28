@@ -1,0 +1,57 @@
+
+
+Post test data to Geochron search service: <br><br>
+
+This page allows you to test the Geochron search web service. <br><br>
+The Geochron search service allows users to remotely query the Geochron database<br>
+for the purposes of gathering search results for use in local software.<br><br>
+The target URL for this POST service is: http://www.geochron.org/search_service.php<br><br>
+The POST variables are detailed below:<br><br>
+
+<form name="blah" action="search_service.php" method="POST">
+
+POST Var: igsn: <input type="text" name="igsn" value=""><br>
+POST Var: laboratoryname: <input type="text" name="laboratoryname" value=""><br>
+POST Var: analystname: <input type="text" name="analystname" value=""><br>
+POST Var: sampleagetype: <select name="sampleagetype" size="4" MULTIPLE>
+  <option value="single analysis 206Pb/238U">single analysis 206Pb/238U</option>
+  <option value="single analysis 207Pb/235U">single analysis 207Pb/235U</option>
+
+  <option value="single analysis 207Pb/206Pb">single analysis 207Pb/206Pb</option>
+  <option value="single analysis 208Pb/232Th">single analysis 208Pb/232Th</option>
+  <option value="weighted mean 207Pb/235U">weighted mean 207Pb/235U</option>
+  <option value="weighted mean 206Pb/238U">weighted mean 206Pb/238U</option>
+  <option value="weighted mean 207Pb/206Pb">weighted mean 207Pb/206Pb</option>
+  <option value="weighted mean_208Pb/232Th">weighted mean_208Pb/232Th</option>
+
+  <option value="Tuff Zirc 206Pb/238U (filtered median age)">Tuff Zirc 206Pb/238U (filtered median age)</option>
+  <option value="Tuff Zirc 207Pb/235U (filtered median age)">Tuff Zirc 207Pb/235U (filtered median age)</option>
+  <option value="Tuff Zirc 208Pb/232U (filtered median age)">Tuff Zirc 208Pb/232U (filtered median age)</option>
+  <option value="concordia">concordia</option>
+  <option value="upper intercept">upper intercept</option>
+  <option value="lower intercept">lower intercept</option>
+
+  <option value="238U/206Pb isochron">238U/206Pb isochron</option>
+  <option value="235U/207Pb isochron">235U/207Pb isochron</option>
+  <option value="232Th/208Pb isochron">232Th/208Pb isochron</option>
+  <option value="Semi-TotalPb isochron">Semi-TotalPb isochron</option>
+  <option value="Total Pb isochron">Total Pb isochron</option>
+</select>
+
+<br>
+POST Var: sampleagevaluemin: <input type="text" name="sampleagevaluemin" value=""><br>
+POST Var: sampleagevaluemax: <input type="text" name="sampleagevaluemax" value=""><br>
+POST Var: sampleageerranalmin: <input type="text" name="sampleageerranalmin" value=""><br>
+POST Var: sampleageerranalmax: <input type="text" name="sampleageerranalmax" value=""><br>
+POST Var: sampleagemeanmin: <input type="text" name="sampleagemeanmin" value=""><br>
+POST Var: sampleagemeanmax: <input type="text" name="sampleagemeanmax" value=""><br>
+<br>
+
+
+<br><br>
+
+<input type="submit" name="submitbutton" value="submit now">
+</form>
+
+
+

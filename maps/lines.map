@@ -1,0 +1,68 @@
+MAP
+	  NAME MAP_POINTS
+	  SIZE 600 300
+	  EXTENT -180 -90 180 90
+	  IMAGETYPE png
+	  TRANSPARENT true
+
+	WEB
+		IMAGEPATH "/tmp"
+		IMAGEURL "/tmp"
+		METADATA
+		"wms_title" "ECPoints"
+		"wms_srs" "EPSG:4326 EPSG:3395 EPSG:3031"
+		"wms_feature_info_mime_type" "text/html"
+		"ows_enable_request" "*"
+		END
+	END
+
+	PROJECTION
+		"init=epsg:4326"
+	END
+
+  LAYER # begin antialiased country boundary (line) layer
+    NAME 'country_line'
+    DATA '/public/mgg/web/www.geochron.org/htdocs/world_borders'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'Country Boundary'
+      STYLE
+        COLOR 96 96 96
+        WIDTH 2
+        ANTIALIAS TRUE
+      END
+    END
+  END # end country boundary layer
+  
+  
+  LAYER # state layer
+    NAME 'state_line'
+    DATA '/public/mgg/web/www.geochron.org/htdocs/fe_2007_us_state00'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'State Boundary'
+      STYLE
+        COLOR 120 120 120
+        WIDTH 2
+        ANTIALIAS TRUE
+      END
+    END
+  END # end state boundary layer
+
+
+
+END

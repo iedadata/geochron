@@ -1,0 +1,32 @@
+
+
+Post test data to Geochron service: <br><br>
+
+<div style="width:500px;">
+This page allows users to use the Geochron web service to remotely upload
+sample files to the Geochron database. Currently, the POST destination URL is
+http://www.geochronportal.org/uploadservice.php.<br><br>
+</div>
+
+<form name="blah" action="uploadservice.php" method="POST" accept-charset="UTF-8">
+
+POST var: username: <input type="text" name="username" value=""><br>
+POST var: password: <input type="text" name="password" value=""><br>
+POST var: public (yes/no): <select name="public">
+  <option value="no" selected>no</option>
+  <option value="yes">yes</option>
+</select><br>
+
+POST var: overwrite (yes/no): <select name="overwrite">
+  <option value="no" selected>no</option>
+  <option value="yes">yes</option>
+</select><br>
+
+<br>
+
+content (XML string):<br>
+<textarea name="content" rows="20" cols="80"></textarea>
+<br><br>
+
+<input type="submit" name="submitbutton" value="submit now">
+</form>
