@@ -1,0 +1,136 @@
+MAP
+  NAME MAP_POINTS
+  SIZE 600 300
+  EXTENT -180 -90 180 90
+  IMAGETYPE png
+  TRANSPARENT true
+
+  SYMBOL
+    NAME 'mygif'
+    TYPE pixmap
+    IMAGE 'doug2.gif' 
+  END
+
+  FONTSET fontset.txt
+
+  LAYER # begin antialiased country boundary (line) layer
+    NAME 'country_line'
+    DATA 'world_borders'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'Country Boundary'
+      STYLE
+        COLOR 96 96 96
+        WIDTH 2
+        ANTIALIAS TRUE
+      END
+    END
+  END # end country boundary layer
+  
+  
+  LAYER # state layer
+    NAME 'state_line'
+    DATA 'fe_2007_us_state00'
+    TYPE LINE
+    STATUS ON
+    TRANSPARENCY ALPHA
+    
+    PROJECTION
+      "init=epsg:4326"
+    END
+
+    CLASS
+      NAME 'State Boundary'
+      STYLE
+        COLOR 120 120 120
+        WIDTH 2
+        ANTIALIAS TRUE
+      END
+    END
+  END # end state boundary layer
+
+	LAYER
+		TYPE POINT
+		NAME pointonly
+		STATUS OFF
+		PROJECTION
+			"proj=latlong"
+		END
+		LABELCACHE ON
+	END
+
+
+	LAYER
+	  NAME snet
+	  STATUS ON
+	  TYPE POINT
+	  LABELCACHE ON
+	  PROJECTION
+	   "init=epsg:4326"
+	  END
+	  CLASS
+		COLOR -1 -1 -1
+		LABEL
+		  COLOR 0 0 0
+	      OUTLINECOLOR 255 255 250
+	      OUTLINEWIDTH 3
+		  SIZE 12
+		  MINSIZE 4
+		  MAXSIZE 18
+		  TYPE TRUETYPE
+		  FONT alte
+		  ANTIALIAS TRUE
+		  BUFFER 2
+		  FORCE TRUE
+		  POSITION UC
+		  OFFSET 2 1
+		END
+	  END
+	  CLASS
+		COLOR -1 -1 -1
+		LABEL
+		  COLOR 0 0 0
+	      OUTLINECOLOR 255 255 250
+	      OUTLINEWIDTH 3
+		  SIZE 12
+		  MINSIZE 4
+		  MAXSIZE 18
+		  TYPE TRUETYPE
+		  FONT alte
+		  ANTIALIAS TRUE
+		  BUFFER 2
+		  FORCE FALSE
+		  POSITION AUTO
+		  OFFSET 2 1
+		END
+	  END
+	  CLASS
+		COLOR -1 -1 -1
+		LABEL
+		  COLOR  255 255 0
+		  OUTLINECOLOR  0 0 0
+		  SHADOWCOLOR 0 0 0
+		  SHADOWSIZE 1 1
+		  SIZE 16
+		  MINSIZE 4
+		  MAXSIZE 18
+		  TYPE TRUETYPE
+		  FONT alte
+		  ANTIALIAS TRUE
+		  BUFFER 2
+		  FORCE TRUE
+		  POSITION UC
+		  OFFSET 2 1
+		END
+	  END
+	END
+
+
+END

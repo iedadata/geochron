@@ -28,6 +28,10 @@ if($_GET['l']){
 include("googlelogout.php");
 
 $googleAuthUrl = filter_var($gClient->createAuthUrl(), FILTER_SANITIZE_URL);
+
+//echo $googleAuthUrl;exit();
+
+
 ?>
 <!DOCTYPE html>
 <html>

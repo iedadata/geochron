@@ -86,6 +86,7 @@ function getPic(){
 					database with minimal input from the operator.<br><br>
 					</div>
 
+					<!---
 					<fieldset class="aboutpage" style="border: 1px solid #CDCDCD; padding: 8px; padding-bottom:0px; margin: 8px 0">
 						<legend style="color:#8a1e04;"><strong>Geochron News</strong></legend>
 							News items here...<br>
@@ -96,6 +97,7 @@ function getPic(){
 							News items here...<br>
 							News items here...<br>
 					</fieldset>
+					--->
 				</div>
 			</td>
 		</tr>

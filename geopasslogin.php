@@ -20,7 +20,7 @@
 
 
 if($_GET['l']){
-	header("Location:http://www.geochron.org/geopass/josso-logout.php?josso_current_url=http://dev.geochron.org/geopasslogin");
+	header("Location:http://www.geochron.org/geopass/josso-logout.php?josso_current_url=http://www.geochron.org/geopasslogin");
 	exit();
 }
 

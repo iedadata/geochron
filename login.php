@@ -18,6 +18,11 @@
  * @see        Geochron, Geochronology
  */
 
+
+//roll back to geopass only.
+header("Location:geopasslogin?l=1");
+exit();
+
 include("includes/geochron-secondary-header.htm");
 ?>
 <link rel="stylesheet" href="/loginbuttons/css/buttons-si.css">
